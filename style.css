@@ -1,6 +1,7 @@
 /* deafult */
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #F8FAFB;
 }
 .row {
     margin: 0;
@@ -35,6 +36,50 @@ a:hover {
 .btn {
     box-shadow: none !important;
 }
+
+
+/* header */
+.com-header-section{
+    padding: 15px 0;
+    background-color: #fff;
+}
+.com-header-section .logo img{
+    max-width: 150px;
+}
+.com-header-section .links i{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.com-header-section .links i:last-child{
+    margin-right: 0;
+}
+.com-header-section .search{
+    position: relative;
+    width: 300px;
+    max-width: 30%;
+    height: 30px;
+}
+.com-header-section .search input{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 8px 40px 8px 7px;
+    outline: none;
+    border: 1px solid #eee;
+    font-size: 12px;
+}
+.com-header-section .search i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    cursor: pointer;
+}
+
 
 .hero-carousel-section {
     padding: 30px 0;
@@ -575,23 +620,6 @@ a:hover {
     font-size: 25px;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes slideIn {
     0% {
         transform: translateX(500px);
@@ -607,4 +635,106 @@ a:hover {
     100% {
         transform: translateX(500px);
     }
+}
+
+
+/* activity feed page */
+
+
+.feed-section{
+    padding: 30px 0;
+}
+
+.feed-bar .act-title{
+    font-weight: 600;
+    color: #393e41;
+    margin-bottom: 30px;
+}
+
+.feed-section .bar-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.post-box{
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+.post-box .body{
+    background-color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.post-box .body .user img{
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.post-box .body .tap p{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+.post-box .footer{
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+}
+.post-box .footer .icon i{
+    color: rgba(57, 62, 65, 0.5);
+    font-size: 17px;
+    cursor: pointer;
+    transition: .5s;
+}
+.post-box .footer .icon{
+    margin-right: 15px;
+}
+.post-box .footer i:hover{
+    color: #000;
+}
+
+:root {
+    --microtip-font-size : 10px;
+}
+
+.side-box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+.side-box-post{
+    display: flex;
+    margin-bottom: 20px;
+}
+.side-box-post .cover{
+    margin-right: 5px;
+}
+.side-box-post .cover img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.side-box-post .info{
+    font-size: 14px;
+}
+.side-box-post .info b{
+    cursor: pointer;
+    font-weight: 500;
+}
+.side-box-post .info .date{
+    color: #aaaaaa;
+}
+.blog-seemore-btn{
+    background-color: #F8FAFB;
+    border: 1px solid #eee;
+    font-size: 12px;
+    font-weight: 600;
 }
