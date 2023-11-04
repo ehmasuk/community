@@ -11,13 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Abel:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
         <!-- owl carousel -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
         <!-- tooltip -->
-        <link rel="stylesheet" href="css/tooltip.css">
-
-
+        <link rel="stylesheet" href="css/tooltip.css" />
 
         <link rel="stylesheet" href="style.css" />
         <title>Community</title>
@@ -28,41 +26,169 @@
         <!-- font-family: 'Roboto', sans-serif; -->
 
 
+
+        <!-- community buy book topbar  -->
+        <!-- community buy book topbar  -->
+        <!-- community buy book topbar  -->
+        <div class="community-buy-book-topbar">
+            <i class="fas fa-times"></i>
+            <div class = "shimmer-div"> </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 py-3">
+                        <p class="buy-book-topbar-title">Échanos una mano comprando un libro.Fomentamos la lectura en escuelas primarias de Latinoamérica y contribuimos a mejorar las condiciones escolares de los peques aportando material escolar.</p>
+                    </div>
+                    <div class="col-md-3 text-center pb-3">
+                        <button class="btn buy-book-topbar-btn" onclick="showTopbarPaymentPopup()">Contribuir ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <section class="com-header-section sticky-top">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="logo">
-                        <img src="https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/Group 263.png" alt="" class="img-fluid">
+                        <img src="https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/Group 263.png" alt="" class="img-fluid" />
                     </div>
+
                     <div class="search">
-                        <input type="text" placeholder="Search...">
+                        <input type="text" placeholder="Buscar..." />
                         <i class="fas fa-search"></i>
                     </div>
                     <div class="links">
-                        <i class="far fa-comment"></i>
-                        <i class="far fa-bell"></i>
-                        <i class="fas fa-user"></i>
+                        <div class="feed-notif">
+                            <i  onclick="toggleShow('feed-notification-notif')" class="far fa-bell">
+                                <span class="notif-mark">8</span>
+                            </i>
+                            <div class="feed-notification-box feed-notification-notif" style="display: none">
+                                <p class="noti-title">Notifications</p>
+                                <div style="padding: 10px">
+                                    <div class="single-notification">
+                                        <p><b>Umer fayez</b> posted a new post Lorem ipsum consectetur adipisicing elit. Hic, facilis?</p>
+                                        <p style="color: blue; font-size: 14px">19 hours ago</p>
+                                    </div>
+                                    <div class="single-notification">
+                                        <p><b>Umer fayez</b> posted a new post Lorem ipsum consectetur adipisicing elit. Hic, facilis?</p>
+                                        <p style="color: blue; font-size: 14px">19 hours ago</p>
+                                    </div>
+                                    <div class="single-notification">
+                                        <p><b>Umer fayez</b> posted a new post Lorem ipsum consectetur adipisicing elit. Hic, facilis?</p>
+                                        <p style="color: blue; font-size: 14px">19 hours ago</p>
+                                    </div>
+                                    <div class="single-notification">
+                                        <p><b>Umer fayez</b> posted a new post Lorem ipsum consectetur adipisicing elit. Hic, facilis?</p>
+                                        <p style="color: blue; font-size: 14px">19 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="feed-chat-notif">
+                            <i onclick="toggleShow('feed-notification-inbox')" class="far fa-comment">
+                                <span class="notif-mark">1</span>
+                            </i>
+                            <div class="feed-notification-box feed-notification-inbox"  style="display: none">
+                                <p class="noti-title">Inbox</p>
+                                <div style="padding: 10px">
+
+
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqie" alt="">
+                                        <div class="w-100">
+                                            <p><b>Umer fayez</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">1s</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqte" alt="">
+                                        <div class="w-100">
+                                            <p><b>Ray</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">5m</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqige" alt="">
+                                        <div class="w-100">
+                                            <p><b>Masuk</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">19h</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqige" alt="">
+                                        <div class="w-100">
+                                            <p><b>Olivia</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">9h</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqige" alt="">
+                                        <div class="w-100">
+                                            <p><b>Masuk</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">19h</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <img src="https://i.pravatar.cc/150?wqige" alt="">
+                                        <div class="w-100">
+                                            <p><b>Olivia</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p style="font: 13px;">Lorem ipsum dolor sit amet?</p>
+                                                <p style="color: blue; font-size: 14px">9h</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <a href=""><i class="fas fa-home mr-3"></i></a>
+
+                        <div class="header-user-img">
+                            <a href="#"><img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section class="feed-section">
             <div class="container">
                 <div class="row">
-
-
-
-
-
-
-                    <div class="col-md-3 left-bar p-0 ">
+                    <div class="col-md-3 left-bar p-0">
                         <div class="side-box">
                             <p class="bar-title">Top students</p>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?5" alt="">
+                                    <img src="https://i.pravatar.cc/150?5" alt="" />
                                 </div>
                                 <div class="top-student">
                                     <div class="rank">
@@ -71,14 +197,13 @@
                                     </div>
                                     <div class="rank">
                                         <p class="lvl">Name</p>
-                                        <p class="data">Avanzado</p>
+                                        <p class="data">Ray</p>
                                     </div>
- 
                                 </div>
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?7" alt="">
+                                    <img src="https://i.pravatar.cc/150?7" alt="" />
                                 </div>
                                 <div class="top-student">
                                     <div class="rank">
@@ -89,12 +214,11 @@
                                         <p class="lvl">Name</p>
                                         <p class="data">Avanzado</p>
                                     </div>
- 
                                 </div>
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?12" alt="">
+                                    <img src="https://i.pravatar.cc/150?12" alt="" />
                                 </div>
                                 <div class="top-student">
                                     <div class="rank">
@@ -103,20 +227,17 @@
                                     </div>
                                     <div class="rank">
                                         <p class="lvl">Name</p>
-                                        <p class="data">Avanzado</p>
+                                        <p class="data">Umer</p>
                                     </div>
- 
                                 </div>
                             </div>
                         </div>
-
-
 
                         <div class="side-box">
                             <p class="bar-title">Blogs</p>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?5" alt="">
+                                    <img src="https://i.pravatar.cc/150?5" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>I had a tree of money</b>
@@ -125,7 +246,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?6" alt="">
+                                    <img src="https://i.pravatar.cc/150?6" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Never tell a lie</b>
@@ -134,7 +255,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?7" alt="">
+                                    <img src="https://i.pravatar.cc/150?7" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Man is mortal</b>
@@ -143,7 +264,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?12" alt="">
+                                    <img src="https://i.pravatar.cc/150?12" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Be honest</b>
@@ -152,7 +273,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?2" alt="">
+                                    <img src="https://i.pravatar.cc/150?2" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Be honest</b>
@@ -161,22 +282,16 @@
                             </div>
                             <button class="btn btn-sm blog-seemore-btn">SEE ALL</button>
                         </div>
-
-
-
-
                     </div>
-
-
 
                     <div class="col-md-6 feed-bar">
                         <h3 class="act-title">Activity Feed</h3>
 
-                        <div class="post-box">
+                        <div class="post-box" onclick="toggleShow('post-popup-wraper')">
                             <div class="body">
                                 <div class="row align-items-center">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?1" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?1" alt="" class="img-fluid" />
                                     </div>
                                     <div class="tap">
                                         <p>Share whats on your mind...</p>
@@ -195,22 +310,23 @@
                         <div class="feed-post">
                             <div class="post-header">
                                 <div class="user">
-                                    <img src="https://i.pravatar.cc/150?ioui" alt="" class="img-fluid">
+                                    <img src="https://i.pravatar.cc/150?ioui" alt="" class="img-fluid" />
                                     <div>
                                         <a href="#" class="name">John</a> posted an update
                                         <p class="time">a year ago</p>
                                     </div>
                                 </div>
-                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                             </div>
                             <div class="content">
-                                <img src="https://i.pravatar.cc/350?1789" alt="">
+                                <p style="font-size: 15px; margin-top: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, architecto!</p>
+                                <img src="https://i.pravatar.cc/350?1789" alt="" />
                             </div>
                             <div class="post-footer">
                                 <p class="like-count">You and Jennifer like this · 2 Comments</p>
                                 <div class="row icons">
                                     <p class="like">
-                                        <i class="far fa-thumbs-up"></i> 
+                                        <i class="far fa-thumbs-up"></i>
                                         <span>Like</span>
                                     </p>
                                     <p class="unlike">
@@ -220,38 +336,85 @@
                                 </div>
                             </div>
                             <div class="comment-box">
-                                <div class="post-header">
-                                    <div class="user">
-                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid">
-                                        <div>
-                                            <a href="#" class="name">John</a> <span class="time">a year ago</span>
-                                            <p class="main-comment">Where is that? Looks beautiful.</p>
-                                            <p class="reply">Reply</p>
+                                <div>
+                                    <div class="post-header">
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
+                                        </div>
+                                        <div class="comment-area">
+                                            <textarea placeholder="Comment"></textarea>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="text-right">
+                                        <button class="btn">Submit</button>
+                                    </div>
                                 </div>
+
+                                <div class="post-header">
+                                    <div class="user w-100">
+                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
+                                        <div class="w-100">
+                                            <a href="#" class="name">John</a> <span class="time">a year ago</span>
+                                            <p class="main-comment">Where is that? Looks beautiful.</p>
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="row">
+                                                    <p class="reply mr-3">Reply</p>
+                                                    <p class="reply">Like</p>
+                                                </div>
+                                                <div>
+                                                    <p class="reply" style="color: blueviolet">10 likes</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="user mt-4 w-100">
+                                                <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
+                                                <div class="w-100">
+                                                    <a href="#" class="name">John</a> <span class="time">a year ago</span>
+                                                    <p class="main-comment">Where is that? Looks beautiful.</p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="post-header">
+                                                    <div class="user">
+                                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
+                                                    </div>
+                                                    <div class="comment-area">
+                                                        <textarea placeholder="Comment"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button class="btn">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
+                                </div>
+
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Looks great</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Thanks! These are helpful 😎</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -260,22 +423,28 @@
                         <div class="feed-post">
                             <div class="post-header">
                                 <div class="user">
-                                    <img src="https://i.pravatar.cc/150?176" alt="" class="img-fluid">
+                                    <img src="https://i.pravatar.cc/150?176" alt="" class="img-fluid" />
                                     <div>
                                         <a href="#" class="name">John</a> posted an update
                                         <p class="time">a year ago</p>
                                     </div>
                                 </div>
-                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                             </div>
                             <div class="content">
-                                <iframe src="https://www.youtube.com/embed/3rrBck7Yn3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe
+                                    src="https://www.youtube.com/embed/3rrBck7Yn3I"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
                             <div class="post-footer">
                                 <p class="like-count">You and Jennifer like this · 2 Comments</p>
                                 <div class="row icons">
                                     <p class="like">
-                                        <i class="far fa-thumbs-up"></i> 
+                                        <i class="far fa-thumbs-up"></i>
                                         <span>Like</span>
                                     </p>
                                     <p class="unlike">
@@ -287,36 +456,36 @@
                             <div class="comment-box">
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Where is that? Looks beautiful.</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Looks great</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Thanks! These are helpful 😎</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -325,22 +494,22 @@
                         <div class="feed-post">
                             <div class="post-header">
                                 <div class="user">
-                                    <img src="https://i.pravatar.cc/150?1456" alt="" class="img-fluid">
+                                    <img src="https://i.pravatar.cc/150?1456" alt="" class="img-fluid" />
                                     <div>
                                         <a href="#" class="name">John</a> posted an update
                                         <p class="time">a year ago</p>
                                     </div>
                                 </div>
-                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                             </div>
                             <div class="content">
-                                <img src="https://i.pravatar.cc/350?1000" alt="">
+                                <img src="https://i.pravatar.cc/350?1000" alt="" />
                             </div>
                             <div class="post-footer">
                                 <p class="like-count">You and Jennifer like this · 2 Comments</p>
                                 <div class="row icons">
                                     <p class="like">
-                                        <i class="far fa-thumbs-up"></i> 
+                                        <i class="far fa-thumbs-up"></i>
                                         <span>Like</span>
                                     </p>
                                     <p class="unlike">
@@ -352,36 +521,36 @@
                             <div class="comment-box">
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Where is that? Looks beautiful.</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Looks great</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Thanks! These are helpful 😎</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -390,22 +559,28 @@
                         <div class="feed-post">
                             <div class="post-header">
                                 <div class="user">
-                                    <img src="https://i.pravatar.cc/150?1789" alt="" class="img-fluid">
+                                    <img src="https://i.pravatar.cc/150?1789" alt="" class="img-fluid" />
                                     <div>
                                         <a href="#" class="name">John</a> posted an update
                                         <p class="time">a year ago</p>
                                     </div>
                                 </div>
-                                <i class="fas fa-ellipsis-h"></i>
+                                <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                             </div>
                             <div class="content">
-                                <iframe src="https://www.youtube.com/embed/3rrBck7Yn3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe
+                                    src="https://www.youtube.com/embed/3rrBck7Yn3I"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
                             <div class="post-footer">
                                 <p class="like-count">You and Jennifer like this · 2 Comments</p>
                                 <div class="row icons">
                                     <p class="like">
-                                        <i class="far fa-thumbs-up"></i> 
+                                        <i class="far fa-thumbs-up"></i>
                                         <span>Like</span>
                                     </p>
                                     <p class="unlike">
@@ -417,53 +592,47 @@
                             <div class="comment-box">
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?wqe" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Where is that? Looks beautiful.</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?rg" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Looks great</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                                 <div class="post-header">
                                     <div class="user">
-                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid">
+                                        <img src="https://i.pravatar.cc/150?ru" alt="" class="img-fluid" />
                                         <div>
                                             <a href="#" class="name">John</a> <span class="time">a year ago</span>
                                             <p class="main-comment">Thanks! These are helpful 😎</p>
                                             <p class="reply">Reply</p>
                                         </div>
                                     </div>
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <div class="icon" aria-label="More options" data-microtip-position="top" role="tooltip"><i class="fas fa-ellipsis-h"></i></div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
-
-
-
                     <div class="col-md-3 right-bar p-0">
-
-
                         <div class="side-box">
                             <p class="bar-title">Top books</p>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?564" alt="">
+                                    <img src="https://i.pravatar.cc/150?564" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Safe drive always</b>
@@ -478,7 +647,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?6666" alt="">
+                                    <img src="https://i.pravatar.cc/150?6666" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>14 signs of love</b>
@@ -493,7 +662,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?746" alt="">
+                                    <img src="https://i.pravatar.cc/150?746" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Never be sad</b>
@@ -508,7 +677,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?a" alt="">
+                                    <img src="https://i.pravatar.cc/150?a" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>10 tips from a wise man</b>
@@ -523,7 +692,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?2456" alt="">
+                                    <img src="https://i.pravatar.cc/150?2456" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Never waste time</b>
@@ -541,7 +710,7 @@
                             <p class="bar-title">Latest updates</p>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?3456" alt="">
+                                    <img src="https://i.pravatar.cc/150?3456" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Be the best</b>
@@ -550,7 +719,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?345" alt="">
+                                    <img src="https://i.pravatar.cc/150?345" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Be the best</b>
@@ -559,7 +728,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?654" alt="">
+                                    <img src="https://i.pravatar.cc/150?654" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Tackle Your closest Spring cleaning</b>
@@ -568,7 +737,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?a45" alt="">
+                                    <img src="https://i.pravatar.cc/150?a45" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>Awesome tips and tricks</b>
@@ -577,7 +746,7 @@
                             </div>
                             <div class="side-box-post">
                                 <div class="cover">
-                                    <img src="https://i.pravatar.cc/150?2345" alt="">
+                                    <img src="https://i.pravatar.cc/150?2345" alt="" />
                                 </div>
                                 <div class="info">
                                     <b>I had a tree of money</b>
@@ -585,40 +754,90 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
             </div>
         </section>
 
+        <div class="post-popup-wraper">
+            <div class="post-popup">
+                <div class="header">
+                    <p>Create post</p>
+                    <i class="fa fa-times" onclick="toggleShow('post-popup-wraper')"></i>
+                </div>
+                <div class="body">
+                    <div class="top">
+                        <img src="https://i.pravatar.cc/150?2345" alt="" />
+                        <p>John</p>
+                    </div>
+                    <div class="bottom">
+                        <textarea placeholder="Share whats on your mind..."></textarea>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="row">
+                        <div class="icon" aria-label="Upload photo" data-microtip-position="top" role="tooltip"><i class="fas fa-camera"></i></div>
+                        <div class="icon" aria-label="Upload video" data-microtip-position="top" role="tooltip"><i class="fas fa-video"></i></div>
+                    </div>
+                    <button class="btn post-btn btn-sm">Post</button>
+                </div>
+            </div>
+        </div>
 
 
-<script>
-let parent = document.querySelector('.feed-section').parentElement;
 
-while (parent) {
-    const hasOverflow = getComputedStyle(parent).overflow;
-    if (hasOverflow !== 'visible') {
-        console.log(hasOverflow, parent);
-    }
-    parent = parent.parentElement;
-}
-</script>
+
+        <!-- payment popup -->
+        <!-- payment popup -->
+        <!-- payment popup -->
+        <div class="latest-payement-popup-wraper" id="topbar-buy-book-payment">
+            <div class="latest-payment-popup">
+                <h1>Desbloquea Todas Las Funciones Y Comienza A Usarlas En Menos De 60 Segundos</h1>
+                <div class="pop">
+                    <i class="fas fa-times"></i>
+                    <div class="radio">
+                        <div class="single-option">
+                            <p class="title">Pequeñas empresas - Mensual</p>
+                            <p class="per">$20 <span>Ahorra 70%</span></p>
+                            <p class="des">Prueba de 7 días gratis, libre de riesgo</p>
+                            <p class="des">Cancela cuando quieras</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label class="head" for="">Ingresa tu tarjeta de crédito o débito</label>
+                        <input type="text">
+                        <input type="submit" class="submit-btn" value="Empezar mi prueba gratis">
+                    </form>
+                    <div class="c-right">
+                        Actualizandote a la versión superior, aceptas 
+                        <a href="#">Política de privacidad</a> y <a href="#">Términos y condiciones.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script>
+
+            const showTopbarPaymentPopup = ()=>{
+                document.querySelector('#topbar-buy-book-payment').style.display = 'block';
+            }
+
+            function toggleShow(wraper) {
+                document.querySelector(`.${wraper}`).classList.toggle("show");
+            }
+
+
+
+        </script>
+
+
+
 
 
     </body>

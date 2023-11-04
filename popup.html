@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Abel:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <!-- tooltip -->
+        <link rel="stylesheet" href="css/tooltip.css">
+
+
+
+        <link rel="stylesheet" href="popup.css" />
+        <title>Community</title>
+    </head>
+    <body>
+
+
+
+
+
+<div class="post-popup-wraper post-post-wraper">
+    <div class="post-popup">
+        <div class="header">
+            <p>Create post</p>
+            <i class="fa fa-times" onclick="toggleShow('post-popup-wraper')"></i>
+        </div>
+        <div class="body">
+            <div class="top">
+                <img src="https://i.pravatar.cc/150?2345" alt="">
+                <p>John</p>
+            </div>
+            <div class="bottom">
+                <textarea placeholder="Share whats on your mind..."></textarea>
+                <div class="text-center">
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <label>
+                    <input type="file">
+                    <i class="fas fa-camera"></i>
+                </label>
+                <label>
+                    <input type="file">
+                    <i class="fas fa-video"></i>
+                </label>
+            </div>
+            <button class="btn post-btn btn-sm">Post</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="post-popup-wraper post-story-wraper">
+    <div class="post-popup">
+        <div class="header">
+            <p>Create story</p>
+            <i class="fa fa-times" onclick="toggleShow('post-popup-wraper')"></i>
+        </div>
+        <div class="body">
+            <div class="top">
+                <img src="https://i.pravatar.cc/150?2345" alt="">
+                <p>John</p>
+            </div>
+            <div class="bottom story-bottom">
+                <input placeholder="Story name" type="text">
+                <input placeholder="Story title" type="text">
+                <textarea placeholder="Description"></textarea>
+                <textarea rows="15" placeholder="Story"></textarea>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <label>
+                    <input type="file">
+                    <i class="fas fa-camera"></i>
+                    Upload feature image
+                </label>
+
+            </div>
+            <button class="btn post-btn btn-sm">Post</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="publish-book-popup-wraper">
+    <div class="pusblish-book-popup">
+        <div class="header">
+            <p>Publish your book</p>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="body">
+            <label>
+                Upload photo <br>
+                <input type="file" class="mt-2">
+            </label>
+            <p><i class="far fa-lightbulb"></i> <b>Tips:</b> Better image attract more readers.</p>
+        </div>
+        <div class="footer">
+            <button class="btn btn-sm btn-outline-success">Publish</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </body>
+</html>
